@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário com Validação</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <form>
       <div id="nameContainer">
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome" />
+        <input type="text" name="nome" id="nome" required/>
       </div>
       <div id="passwordContainer">
         <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha" />
+        <input type="password" name="senha" id="senha" required/>
       </div>
       <div id="button">
-        <input type="submit" value="Enviar" />
+        <input type="submit" id="submitBtn" value="Enviar" />
       </div>
     </form>
   </body>
