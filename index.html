@@ -18,6 +18,7 @@
             class="inputBox"
             id="nome"
             placeholder="Digite seu nome"
+            oninput="validarNome()"
             required
           />
           <span class="spanMsg">Nome deve ter no mínimo 3 caracteres</span>
@@ -29,6 +30,7 @@
             class="inputBox"
             id="email"
             placeholder="Digite seu e-mail"
+            oninput="validarE_Mail()"
             required
           />
           <span class="spanMsg">Digite um e-mail válido</span>
@@ -40,6 +42,7 @@
             class="inputBox"
             id="senha"
             placeholder="Digite sua senha"
+            oninput="validarSenha()"
             required
           />
           <span class="spanMsg"
@@ -53,6 +56,7 @@
             class="inputBox"
             id="senhaVerify"
             placeholder="Repita a sua senha"
+            oninput="confirmarSenha()"
             required
           />
           <span class="spanMsg">As senhas devem ser compatíveis</span>
@@ -64,6 +68,7 @@
             id="descricao"
             cols="25"
             rows="10"
+            value=""
             placeholder="Fale um pouco sobre você..."
           >
           </textarea>
@@ -89,7 +94,12 @@
           <p>Quais suas habilidades:</p>
           <div id="habilitiesBox">
             <div>
-              <input type="checkbox" id="html" value="html" name="habilidades" />
+              <input
+                type="checkbox"
+                id="html"
+                value="html"
+                name="habilidades"
+              />
               <label for="html">HTML</label>
             </div>
             <div>
