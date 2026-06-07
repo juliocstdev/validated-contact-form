@@ -1,2 +1,2 @@
 # validated-contact-form
-A responsive contact form built with HTML, CSS, and JavaScript, including field validation, error messages, and improved user experience.
+Formulário de contato responsivo com validação de campos em tempo real, tratamento de erros e feedback visual ao usuário. Desenvolvido para demonstrar boas práticas de desenvolvimento front-end.
